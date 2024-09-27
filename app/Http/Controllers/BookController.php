@@ -128,7 +128,7 @@ public function show($id)
     $book = Book::findOrFail($id);
     $book->delete();
 
-    return redirect()->route('dashboard')->with('success', 'Dashboard deleted successfully.');
+    return redirect()->route('dashboard')->with('success', 'Book deleted successfully.');
 }
 
 
